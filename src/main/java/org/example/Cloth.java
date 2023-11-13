@@ -18,6 +18,7 @@ public class Cloth {
         this.price = price;
     }
 
+    // методи для отримання полів
     public int getId() {
         return id;
     }
@@ -38,6 +39,7 @@ public class Cloth {
         return price;
     }
 
+    // метод для зміни ціни (можна додати певні перевірки)
     public void setPrice(double price) {
         this.price = price;
     }
