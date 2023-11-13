@@ -1,7 +1,9 @@
 package org.example;
 
+// representation of cloth
+
 public class Cloth {
-    // статичне поле класу для автоінкрементації id в інстансах
+    // static field for auto-incrementing id in instances
     private static int currentId = 0;
 
     private int id;
@@ -10,6 +12,7 @@ public class Cloth {
     private String color;
     private double price;
 
+    // constructor
     Cloth (String type, String size, String color, double price) {
         this.id = currentId++;
         this.type = type;
@@ -18,7 +21,7 @@ public class Cloth {
         this.price = price;
     }
 
-    // методи для отримання полів
+    // getters
     public int getId() {
         return id;
     }
@@ -39,7 +42,7 @@ public class Cloth {
         return price;
     }
 
-    // метод для зміни ціни (можна додати певні перевірки)
+    // setter for price (some checks could be added)
     public void setPrice(double price) {
         this.price = price;
     }
