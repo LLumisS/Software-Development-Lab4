@@ -1,6 +1,7 @@
 package org.example;
 
 public class Cloth {
+    // статичне поле класу для автоінкрементації id в інстансах
     private static int currentId = 0;
 
     private int id;
@@ -35,5 +36,9 @@ public class Cloth {
 
     public double getPrice() {
         return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
     }
 }
