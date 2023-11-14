@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-public class Main {
+public class Lab4 {
     public static void main(String[] args) {
         // creating an array of clothes 
         ArrayList<Cloth> clothes = new ArrayList<>();
@@ -16,6 +16,9 @@ public class Main {
         clothes.add(new Cloth("pants", "S", "gray", 3.49));
         clothes.add(new Cloth("shorts", "XXL", "pink", 9.99));
 
+        System.out.println();
+        showList(clothes);
+        
         // sorting the array by decreasing price (double value from the `getPrice` method)
         Collections.sort(clothes, Comparator.comparingDouble(Cloth::getPrice).reversed());
         
