@@ -22,7 +22,6 @@ public class Lab4 {
         // sorting the array by decreasing price (double value from the `getPrice` method)
         Collections.sort(clothes, Comparator.comparingDouble(Cloth::getPrice).reversed());
         
-        System.out.println();
         showList(clothes);
         
         // sorting the array by increasing id (int value from the `getId` method)
